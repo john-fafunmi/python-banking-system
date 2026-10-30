@@ -58,6 +58,7 @@ class Account:
             return False
         
         
+        
         self.balance -= amount
         print(f"Successfully transferred ${amount:.2f} to {target_account.owner_name}")
         transfer_tx = Transaction(amount, self.owner_name, target_account.owner_name, "Transfer Out")
@@ -98,7 +99,8 @@ def main():
         print("       Type 3 for withdrawal   ")
         print("       Type 4 for transfer      ")
         print("   Type 5 to view transaction history      ")
-        print("           Type 6 to exit!     ")
+        print(" Type 6 to freeze account because of theft ")
+        print("           Type 7 to exit!     ")
         number = input("Which option? (1-6): ").strip()
 
         if number == '1':
@@ -123,8 +125,23 @@ def main():
                 print(f"Transaction {index + 1}. ${transaction.amount:.2f} | Sender: {transaction.sender} | Receiver: {transaction.receiver} | Type: {transaction.type_transaction} | Time: {transaction.timestamp}")
                 
         elif number == '6':
+            ask = input("Do you want to freeze your account? (yes or no): ").strip().lower()
+            if ask == "yes":
+                my_user.account.account_freeze()
+                print("You account has successfully been frozen! ")
+                return
+            elif ask == "no":
+                print("Your account wont be frozen. ")
+                return
+            else:
+                print("Please enter 'yes' or 'no' ")
+                
+
+            return
+        elif number == "7":
             print("You have successfully Exitted!")
             return
+
         else:
             print("Please enter a number from 1-6: ")
 main()
