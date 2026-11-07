@@ -1,24 +1,21 @@
 # Python Banking System
 
-An object-oriented command-line banking application built in Python. This project simulates core banking operations, account security controls, and transaction tracking.
+A simple command-line banking application built in Python to practice object-oriented programming, state management, and basic transactional logic.
 
-## 🎯 Why I Built This
+## Why I Built This
 
-I built this project to deepen my understanding of Object-Oriented Programming (OOP), state management, and class interactions in Python. Specifically, I wanted to practice:
-- Designing multi-class architectures where objects interact with one another (`User`, `Account`, `Transaction`).
-- Managing state, data validation, and conditional business logic (e.g., preventing overdrafts or negative deposits).
-- Passing object references between classes to handle inter-account fund transfers.
-- Tracking history by generating timestamped records using Python's `datetime` module.
+I built this project to strengthen my understanding of Python classes and object interactions. As a beginner, I wanted a hands-on project to practice:
+- Designing multiple classes (`User`, `Account`, `Transaction`) that interact with each other.
+- Managing application state and validation rules (like preventing negative deposits or overdrafts).
+- Generating timestamped transaction logs using Python's `datetime` module.
 
-## 🚀 Key Features
+## Features
 
-- **Object-Oriented Design:** Clean separation of responsibilities across `User`, `Account`, and `Transaction` classes.
-- **Core Banking Operations:** Safe deposit, withdrawal, and fund transfer methods with built-in validation rules and balance checking.
-- **Transaction Audit Logging:** Automatically instantiates and logs timestamped transaction records detailing senders, receivers, amounts, and operation types.
-- **Account Security:** Includes account-freezing capabilities to manage security states.
-- **Interactive CLI Menu:** Robust command-line interface loop allowing users to navigate through banking options smoothly.
+- **Account Management:** Basic deposit, withdrawal, and inter-account fund transfers with input validation.
+- **Transaction History:** Automatically records timestamped transaction details (sender, receiver, amount, and type).
+- **Account Security:** Includes a feature to freeze accounts and unfreeze them via a passcode check.
 
-## ⚙️ How to Run
+## How to Run
 
 1. Clone the repository and navigate into the directory:
    ```bash
