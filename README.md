@@ -1,6 +1,6 @@
 # Python Banking System
 
-A simple command-line banking application built in Python to practice object-oriented programming, state management, and basic transactional logic.
+A simple command-line banking application built in Python to practice object-oriented programming, state management, and basic transactional logic. 
 
 ## Why I Built This
 
